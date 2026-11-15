@@ -1,0 +1,625 @@
+[
+  {
+    "text": "כל",
+    "startMs": 380,
+    "endMs": 600,
+    "timestampMs": 490,
+    "confidence": null
+  },
+  {
+    "text": " העסק",
+    "startMs": 600,
+    "endMs": 1020,
+    "timestampMs": 810,
+    "confidence": null
+  },
+  {
+    "text": " צריך",
+    "startMs": 1020,
+    "endMs": 1460,
+    "timestampMs": 1240,
+    "confidence": null
+  },
+  {
+    "text": " AI",
+    "startMs": 1460,
+    "endMs": 1940,
+    "timestampMs": 1700,
+    "confidence": null
+  },
+  {
+    "text": " נניח",
+    "startMs": 2920,
+    "endMs": 3160,
+    "timestampMs": 3040,
+    "confidence": null
+  },
+  {
+    "text": " שיש",
+    "startMs": 3160,
+    "endMs": 3480,
+    "timestampMs": 3320,
+    "confidence": null
+  },
+  {
+    "text": " לכם",
+    "startMs": 3480,
+    "endMs": 3840,
+    "timestampMs": 3660,
+    "confidence": null
+  },
+  {
+    "text": " עסק",
+    "startMs": 3840,
+    "endMs": 4000,
+    "timestampMs": 3920,
+    "confidence": null
+  },
+  {
+    "text": " ואתם",
+    "startMs": 4280,
+    "endMs": 4680,
+    "timestampMs": 4480,
+    "confidence": null
+  },
+  {
+    "text": " מקבלים",
+    "startMs": 4680,
+    "endMs": 5020,
+    "timestampMs": 4850,
+    "confidence": null
+  },
+  {
+    "text": " פניעות",
+    "startMs": 5020,
+    "endMs": 5340,
+    "timestampMs": 5180,
+    "confidence": null
+  },
+  {
+    "text": " מלקוחות",
+    "startMs": 5340,
+    "endMs": 5880,
+    "timestampMs": 5610,
+    "confidence": null
+  },
+  {
+    "text": " בוואטסאא,",
+    "startMs": 5880,
+    "endMs": 6420,
+    "timestampMs": 6150,
+    "confidence": null
+  },
+  {
+    "text": " באתר",
+    "startMs": 6520,
+    "endMs": 6860,
+    "timestampMs": 6690,
+    "confidence": null
+  },
+  {
+    "text": " ובפייסבוק",
+    "startMs": 6860,
+    "endMs": 8000,
+    "timestampMs": 7430,
+    "confidence": null
+  },
+  {
+    "text": " אתם",
+    "startMs": 8880,
+    "endMs": 9140,
+    "timestampMs": 9010,
+    "confidence": null
+  },
+  {
+    "text": " מעתיקים",
+    "startMs": 9140,
+    "endMs": 9580,
+    "timestampMs": 9360,
+    "confidence": null
+  },
+  {
+    "text": " פרטים",
+    "startMs": 9580,
+    "endMs": 9940,
+    "timestampMs": 9760,
+    "confidence": null
+  },
+  {
+    "text": " ידנית",
+    "startMs": 9940,
+    "endMs": 10000,
+    "timestampMs": 9970,
+    "confidence": null
+  },
+  {
+    "text": " שוכחים",
+    "startMs": 10500,
+    "endMs": 10980,
+    "timestampMs": 10740,
+    "confidence": null
+  },
+  {
+    "text": " לחזור",
+    "startMs": 10980,
+    "endMs": 11400,
+    "timestampMs": 11190,
+    "confidence": null
+  },
+  {
+    "text": " לחלק",
+    "startMs": 11400,
+    "endMs": 11740,
+    "timestampMs": 11570,
+    "confidence": null
+  },
+  {
+    "text": " מהלקוחות",
+    "startMs": 11740,
+    "endMs": 12000,
+    "timestampMs": 11870,
+    "confidence": null
+  },
+  {
+    "text": " והם",
+    "startMs": 12320,
+    "endMs": 12480,
+    "timestampMs": 12400,
+    "confidence": null
+  },
+  {
+    "text": " פסבזים",
+    "startMs": 12480,
+    "endMs": 12960,
+    "timestampMs": 12720,
+    "confidence": null
+  },
+  {
+    "text": " מזמן",
+    "startMs": 12960,
+    "endMs": 13280,
+    "timestampMs": 13120,
+    "confidence": null
+  },
+  {
+    "text": " על",
+    "startMs": 13280,
+    "endMs": 13460,
+    "timestampMs": 13370,
+    "confidence": null
+  },
+  {
+    "text": " מעקב",
+    "startMs": 13460,
+    "endMs": 14000,
+    "timestampMs": 13730,
+    "confidence": null
+  },
+  {
+    "text": " עכשיו",
+    "startMs": 15140,
+    "endMs": 16000,
+    "timestampMs": 15570,
+    "confidence": null
+  },
+  {
+    "text": " אפשר",
+    "startMs": 16240,
+    "endMs": 16460,
+    "timestampMs": 16350,
+    "confidence": null
+  },
+  {
+    "text": " לבנות",
+    "startMs": 16460,
+    "endMs": 16920,
+    "timestampMs": 16690,
+    "confidence": null
+  },
+  {
+    "text": " סוכן",
+    "startMs": 16920,
+    "endMs": 17520,
+    "timestampMs": 17220,
+    "confidence": null
+  },
+  {
+    "text": " AI",
+    "startMs": 17520,
+    "endMs": 17740,
+    "timestampMs": 17630,
+    "confidence": null
+  },
+  {
+    "text": " שיתפל",
+    "startMs": 17740,
+    "endMs": 18260,
+    "timestampMs": 18000,
+    "confidence": null
+  },
+  {
+    "text": " בבעיה",
+    "startMs": 18260,
+    "endMs": 18700,
+    "timestampMs": 18480,
+    "confidence": null
+  },
+  {
+    "text": " זו",
+    "startMs": 18700,
+    "endMs": 18880,
+    "timestampMs": 18790,
+    "confidence": null
+  },
+  {
+    "text": " כמובן",
+    "startMs": 18880,
+    "endMs": 19000,
+    "timestampMs": 18940,
+    "confidence": null
+  },
+  {
+    "text": " אבל",
+    "startMs": 19740,
+    "endMs": 19880,
+    "timestampMs": 19810,
+    "confidence": null
+  },
+  {
+    "text": " אולי",
+    "startMs": 19880,
+    "endMs": 20280,
+    "timestampMs": 20080,
+    "confidence": null
+  },
+  {
+    "text": " בכלל",
+    "startMs": 20280,
+    "endMs": 20560,
+    "timestampMs": 20420,
+    "confidence": null
+  },
+  {
+    "text": " מספיק",
+    "startMs": 20560,
+    "endMs": 20980,
+    "timestampMs": 20770,
+    "confidence": null
+  },
+  {
+    "text": " לחבר",
+    "startMs": 20980,
+    "endMs": 21460,
+    "timestampMs": 21220,
+    "confidence": null
+  },
+  {
+    "text": " בין",
+    "startMs": 21460,
+    "endMs": 21720,
+    "timestampMs": 21590,
+    "confidence": null
+  },
+  {
+    "text": " המערכות",
+    "startMs": 21720,
+    "endMs": 22000,
+    "timestampMs": 21860,
+    "confidence": null
+  },
+  {
+    "text": " וליצור",
+    "startMs": 22260,
+    "endMs": 22620,
+    "timestampMs": 22440,
+    "confidence": null
+  },
+  {
+    "text": " אוטומציה",
+    "startMs": 22620,
+    "endMs": 23080,
+    "timestampMs": 22850,
+    "confidence": null
+  },
+  {
+    "text": " פשוט",
+    "startMs": 23080,
+    "endMs": 23480,
+    "timestampMs": 23280,
+    "confidence": null
+  },
+  {
+    "text": " שתעשה",
+    "startMs": 23480,
+    "endMs": 23920,
+    "timestampMs": 23700,
+    "confidence": null
+  },
+  {
+    "text": " את",
+    "startMs": 23920,
+    "endMs": 24000,
+    "timestampMs": 23960,
+    "confidence": null
+  },
+  {
+    "text": " העבודה",
+    "startMs": 24000,
+    "endMs": 24000,
+    "timestampMs": 24000,
+    "confidence": null
+  },
+  {
+    "text": " וזה",
+    "startMs": 25240,
+    "endMs": 25540,
+    "timestampMs": 25390,
+    "confidence": null
+  },
+  {
+    "text": " בדיוק",
+    "startMs": 25540,
+    "endMs": 25800,
+    "timestampMs": 25670,
+    "confidence": null
+  },
+  {
+    "text": " העניין",
+    "startMs": 25800,
+    "endMs": 26500,
+    "timestampMs": 26150,
+    "confidence": null
+  },
+  {
+    "text": " המטרה",
+    "startMs": 27340,
+    "endMs": 27700,
+    "timestampMs": 27520,
+    "confidence": null
+  },
+  {
+    "text": " היא",
+    "startMs": 27700,
+    "endMs": 27900,
+    "timestampMs": 27800,
+    "confidence": null
+  },
+  {
+    "text": " לא",
+    "startMs": 27900,
+    "endMs": 28100,
+    "timestampMs": 28000,
+    "confidence": null
+  },
+  {
+    "text": " להכניס",
+    "startMs": 28100,
+    "endMs": 28680,
+    "timestampMs": 28390,
+    "confidence": null
+  },
+  {
+    "text": " בכל",
+    "startMs": 28680,
+    "endMs": 29080,
+    "timestampMs": 28880,
+    "confidence": null
+  },
+  {
+    "text": " מחיר",
+    "startMs": 29080,
+    "endMs": 29720,
+    "timestampMs": 29400,
+    "confidence": null
+  },
+  {
+    "text": " AI",
+    "startMs": 29720,
+    "endMs": 30000,
+    "timestampMs": 29860,
+    "confidence": null
+  },
+  {
+    "text": " לעסק",
+    "startMs": 30000,
+    "endMs": 30480,
+    "timestampMs": 30240,
+    "confidence": null
+  },
+  {
+    "text": " שלכם",
+    "startMs": 30480,
+    "endMs": 31000,
+    "timestampMs": 30740,
+    "confidence": null
+  },
+  {
+    "text": " המטרה",
+    "startMs": 31420,
+    "endMs": 31720,
+    "timestampMs": 31570,
+    "confidence": null
+  },
+  {
+    "text": " היא",
+    "startMs": 31720,
+    "endMs": 31860,
+    "timestampMs": 31790,
+    "confidence": null
+  },
+  {
+    "text": " לחסוך",
+    "startMs": 31860,
+    "endMs": 32260,
+    "timestampMs": 32060,
+    "confidence": null
+  },
+  {
+    "text": " לכם",
+    "startMs": 32260,
+    "endMs": 32620,
+    "timestampMs": 32440,
+    "confidence": null
+  },
+  {
+    "text": " זמן",
+    "startMs": 32620,
+    "endMs": 32900,
+    "timestampMs": 32760,
+    "confidence": null
+  },
+  {
+    "text": " לצמצן",
+    "startMs": 32900,
+    "endMs": 33460,
+    "timestampMs": 33180,
+    "confidence": null
+  },
+  {
+    "text": " טעויות",
+    "startMs": 33460,
+    "endMs": 33800,
+    "timestampMs": 33630,
+    "confidence": null
+  },
+  {
+    "text": " ולגרום",
+    "startMs": 33800,
+    "endMs": 34280,
+    "timestampMs": 34040,
+    "confidence": null
+  },
+  {
+    "text": " לעסק",
+    "startMs": 34280,
+    "endMs": 34680,
+    "timestampMs": 34480,
+    "confidence": null
+  },
+  {
+    "text": " לעבוד",
+    "startMs": 34680,
+    "endMs": 35060,
+    "timestampMs": 34870,
+    "confidence": null
+  },
+  {
+    "text": " טוב",
+    "startMs": 35060,
+    "endMs": 35440,
+    "timestampMs": 35250,
+    "confidence": null
+  },
+  {
+    "text": " יותר",
+    "startMs": 35440,
+    "endMs": 35500,
+    "timestampMs": 35470,
+    "confidence": null
+  },
+  {
+    "text": " אז",
+    "startMs": 36160,
+    "endMs": 36320,
+    "timestampMs": 36240,
+    "confidence": null
+  },
+  {
+    "text": " לפני",
+    "startMs": 36320,
+    "endMs": 36480,
+    "timestampMs": 36400,
+    "confidence": null
+  },
+  {
+    "text": " שאתם",
+    "startMs": 36480,
+    "endMs": 36740,
+    "timestampMs": 36610,
+    "confidence": null
+  },
+  {
+    "text": " משקיעים",
+    "startMs": 36740,
+    "endMs": 37040,
+    "timestampMs": 36890,
+    "confidence": null
+  },
+  {
+    "text": " בטכנולוגיה",
+    "startMs": 37040,
+    "endMs": 37660,
+    "timestampMs": 37350,
+    "confidence": null
+  },
+  {
+    "text": " חדשה,",
+    "startMs": 37660,
+    "endMs": 38300,
+    "timestampMs": 37980,
+    "confidence": null
+  },
+  {
+    "text": " תשאלו",
+    "startMs": 38340,
+    "endMs": 38700,
+    "timestampMs": 38520,
+    "confidence": null
+  },
+  {
+    "text": " את",
+    "startMs": 38700,
+    "endMs": 38740,
+    "timestampMs": 38720,
+    "confidence": null
+  },
+  {
+    "text": " עצמכם,",
+    "startMs": 38740,
+    "endMs": 39500,
+    "timestampMs": 39120,
+    "confidence": null
+  },
+  {
+    "text": " איזו",
+    "startMs": 39540,
+    "endMs": 39860,
+    "timestampMs": 39700,
+    "confidence": null
+  },
+  {
+    "text": " בעיה",
+    "startMs": 39860,
+    "endMs": 40140,
+    "timestampMs": 40000,
+    "confidence": null
+  },
+  {
+    "text": " בעצם",
+    "startMs": 40140,
+    "endMs": 40500,
+    "timestampMs": 40320,
+    "confidence": null
+  },
+  {
+    "text": " אני",
+    "startMs": 40500,
+    "endMs": 40580,
+    "timestampMs": 40540,
+    "confidence": null
+  },
+  {
+    "text": " מנסה",
+    "startMs": 40580,
+    "endMs": 41000,
+    "timestampMs": 40790,
+    "confidence": null
+  },
+  {
+    "text": " לפתור?",
+    "startMs": 41000,
+    "endMs": 41500,
+    "timestampMs": 41250,
+    "confidence": null
+  }
+]

@@ -1,0 +1,123 @@
+{
+  "standard": "Posiblo Video Standard v1",
+  "archivedAt": "2026-11-15T18:35:35.923Z",
+  "approvedVideo": "out/not-every-business-needs-ai-posiblo.mp4",
+  "provenance": "Snapshot of workspace at standard creation, not a proven historical render commit. Prior QA report refers to the old filename; retained as historical evidence only.",
+  "files": [
+    {
+      "path": ".prettierrc",
+      "bytes": 66,
+      "sha256": "10e86224d2f90945fbe57db21ac109bdb0ce9b5d7470e7b78fa5f8b6d49a1afd"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "bytes": 79,
+      "sha256": "7f2ca640409fd597965bedf929073b9a74f143643e1711150c4cac3b6ec5c80d"
+    },
+    {
+      "path": "out/edit-notes.txt",
+      "bytes": 2258,
+      "sha256": "11c2791cf890a7932f30f42b288843c067e3ce58788933a65a86a2a4b81a88a9"
+    },
+    {
+      "path": "out/not-every-business-needs-ai-posiblo.mp4",
+      "bytes": 15852486,
+      "sha256": "acdfb26d17c215c562c090725aeebd7f23315870394b48a81391f3d1f8a04acc"
+    },
+    {
+      "path": "out/phrase-crosscheck.json",
+      "bytes": 3341,
+      "sha256": "291238c7966018c50df86d15144188cd9d8c8ea39f9e6570906559abe5bb15de"
+    },
+    {
+      "path": "out/posiblo-first-test.srt",
+      "bytes": 1518,
+      "sha256": "4c9a83aae313bb58a377c22a736ecadcbd5a30c061d5b682c3c051046de5227e"
+    },
+    {
+      "path": "out/transcript.txt",
+      "bytes": 1499,
+      "sha256": "a256f0b20b446ca534c26433f0994a5f7e7c84c49bfb5af2632b07b8d8971ce7"
+    },
+    {
+      "path": "out/verification.json",
+      "bytes": 4712,
+      "sha256": "958ec4d83c953e4a476dc351bc5bab76566efa1d7f089d310657a96ee994e4b0"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 232605,
+      "sha256": "f8aae6c58b59e152715b05a002976a9a2e5ded937882bdfa6c0b78728e9be3f6"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1405,
+      "sha256": "2622f2b22e4a960cb2a905c9e4250478324883b0707db60333f37082a181c29e"
+    },
+    {
+      "path": "public/input/testvideo.mp4",
+      "bytes": 9967048,
+      "sha256": "6656ead9d4d2b42dd211e729df03a5d6f134da40a8c1611344897fcb02e5f261"
+    },
+    {
+      "path": "remotion.config.ts",
+      "bytes": 371,
+      "sha256": "af5ce97f98b2c91a7891f2bef4801f7dc700843f010fd81e1566d9eebf6f5ad1"
+    },
+    {
+      "path": "scripts/check-phrases.mjs",
+      "bytes": 901,
+      "sha256": "e58267a787a76e8b3b398b3d9d0d778b72f4d2eae17b0bcb02cd44e38db36b4c"
+    },
+    {
+      "path": "scripts/prepare-captions.mjs",
+      "bytes": 1652,
+      "sha256": "e64ac9601efc8edc5b879407624373773e7f94f6e29954f21724deb60adb7026"
+    },
+    {
+      "path": "scripts/transcribe.mjs",
+      "bytes": 1057,
+      "sha256": "75add00612c84c0248b6fb4abf4c89567d46872f8a03a8731412dc2e0bebe3c1"
+    },
+    {
+      "path": "scripts/verify-output.mjs",
+      "bytes": 2805,
+      "sha256": "f9f6de527ad78ab5ddc656a3781c4f19ecfc2dc14af36cb2e2cf4977e6fe5e61"
+    },
+    {
+      "path": "src/captions-final.json",
+      "bytes": 10557,
+      "sha256": "86b13474d0a17c1c09efb733bee87d042bca0ab045c2d701cfb3a6bf37a6314b"
+    },
+    {
+      "path": "src/captions.json",
+      "bytes": 11141,
+      "sha256": "4ba2d7ef7950822fbc0217f822d02eab76bc2c5415cf488552ef96bc0c5af862"
+    },
+    {
+      "path": "src/Composition.tsx",
+      "bytes": 3618,
+      "sha256": "900e81469a852dd52b159963d21a9567b3508ff9fd9d0cf039911dfd588b421b"
+    },
+    {
+      "path": "src/index.ts",
+      "bytes": 109,
+      "sha256": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74"
+    },
+    {
+      "path": "src/Motion.tsx",
+      "bytes": 8000,
+      "sha256": "f2ec5848aefa6ec64f5dbcb67b57b54f15013036a642fcf3160538c9840746e0"
+    },
+    {
+      "path": "src/Root.tsx",
+      "bytes": 236,
+      "sha256": "896dcd2eb5316e38b67e6bff0e3764d33d84a5b879fe512b0a9babb8dae34010"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 399,
+      "sha256": "f367cf226b1acef64d282487c0b336602aa55894d9ea42af2df232d4f7f0612c"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+POSIBLO FIRST TEST
+
+Full output: out/posiblo-first-test.mp4
+720 x 1280, 30 fps, 42.733 seconds, H.264 + AAC.
+Source: C:/Users/meirn/Downloads/testvideo.mp4
+Original kept intact; public/input/testvideo.mp4 is an identical copy.
+
+EDIT
+The entire original recording and its real voice run continuously, without time cuts or speed changes.
+00.00-02.67: Opening Hebrew message above the speaker.
+04.80-14.30: Incoming channels converge into a manual workflow, followed by missed follow-ups and time spent tracking.
+19.50-25.00: Animated three-stage connected automation workflow.
+31.10-35.90: Time savings, fewer errors, better business operation.
+38.20-42.70: Closing question above the speaker.
+The real speaker remains visible in an inset during explanatory B-roll.
+No synthetic voice, avatar, stock footage, paid APIs or paid asset services used.
+
+CAPTIONS
+Hebrew RTL, word timestamps, active word color. Source JSON: src/captions-final.json.
+Local Whisper large-v3-turbo, cross-checked with small, medium, and targeted retranscription.
+Automatic transcription was not verified by human listening.
+One unclear clause, 12.26-13.68s, was omitted from captions instead of guessed. Audio remains intact.
+Two orthographic normalizations are documented in out/transcript.txt.
+Source and comparison transcripts are retained as out/transcription-*.json.
+SRT: out/posiblo-first-test.srt. Timed text: out/transcript.txt.
+
+REUSE
+npm run dev: open Studio; composition PosibloFirstTest.
+npm run render: repeat the complete export.
+npm run preview:render: render the six-second workflow preview.
+npm run verify:video: decode output, validate metadata and caption timestamps, measure audio lag.
+src/Motion.tsx: reusable workflow cards, SVG connectors, icons and scene shells.
+src/Composition.tsx: camera layout, caption display and explicit scene timing.
+Caption JSON, generated connectors, camera resizing and template internals are programmatic; scene sequences and authored headline elements are selectable in Studio.
+
+LIMITATIONS
+The original is 480 x 854; exporting at 720 x 1280 cannot add real source detail.
+Automatic subtitle timing and transcription can retain errors; no human listening certification is claimed.
+Full verification results: out/verification.json.

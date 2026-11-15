@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import {downloadWhisperModel, loadWhisperModel, transcribe, toCaptions} from '@remotion/whisper-webgpu';
+const wav = fs.readFileSync('out/speech.wav');
+let offset=12;
+while(wav.toString('ascii',offset,offset+4)!=='data') offset += 8+wav.readUInt32LE(offset+4);
+const length=wav.readUInt32LE(offset+4); offset+=8;
+const waveform=new Float32Array(length/2);
+for(let i=0;i<waveform.length;i++) waveform[i]=wav.readInt16LE(offset+i*2)/32768;
+const model=process.argv[2] || 'large-v3-turbo';
+console.log('Downloading multilingual Whisper '+model);
+await downloadWhisperModel({model});
+const handle=await loadWhisperModel({model});
+console.log('Transcribing Hebrew locally');
+const result=await transcribe({channelWaveform:waveform,model,language:'he',task:'transcribe'});
+fs.writeFileSync('out/transcription-raw.json',JSON.stringify(result,null,2));
+fs.writeFileSync('src/captions.json',JSON.stringify(toCaptions({whisperWebGpuOutput:result}).captions,null,2));
+console.log(JSON.stringify(result));
+await handle[Symbol.asyncDispose]();

@@ -1,0 +1,156 @@
+[
+  {
+    "start": 0,
+    "end": 2.5,
+    "text": "לא כל עסק צריך AI",
+    "words": [
+      {
+        "text": "לא",
+        "startInSeconds": 0.22,
+        "endInSeconds": 0.34
+      },
+      {
+        "text": " כל",
+        "startInSeconds": 0.34,
+        "endInSeconds": 0.54
+      },
+      {
+        "text": " עסק",
+        "startInSeconds": 0.54,
+        "endInSeconds": 0.84
+      },
+      {
+        "text": " צריך",
+        "startInSeconds": 0.84,
+        "endInSeconds": 1.26
+      },
+      {
+        "text": " AI",
+        "startInSeconds": 1.26,
+        "endInSeconds": 1.64
+      }
+    ],
+    "model": "large-v3-turbo"
+  },
+  {
+    "start": 8.5,
+    "end": 14.5,
+    "text": "אתם מעתיקים פרטים ידנית, שוכחים לחזור לחלק מהלקחות והם בזבזים זמן על מעקב.",
+    "words": [
+      {
+        "text": "אתם",
+        "startInSeconds": 0.3,
+        "endInSeconds": 0.52
+      },
+      {
+        "text": " מעתיקים",
+        "startInSeconds": 0.52,
+        "endInSeconds": 0.96
+      },
+      {
+        "text": " פרטים",
+        "startInSeconds": 0.96,
+        "endInSeconds": 1.36
+      },
+      {
+        "text": " ידנית,",
+        "startInSeconds": 1.36,
+        "endInSeconds": 1.92
+      },
+      {
+        "text": " שוכחים",
+        "startInSeconds": 1.94,
+        "endInSeconds": 2.42
+      },
+      {
+        "text": " לחזור",
+        "startInSeconds": 2.42,
+        "endInSeconds": 2.86
+      },
+      {
+        "text": " לחלק",
+        "startInSeconds": 2.86,
+        "endInSeconds": 3.16
+      },
+      {
+        "text": " מהלקחות",
+        "startInSeconds": 3.16,
+        "endInSeconds": 3.76
+      },
+      {
+        "text": " והם",
+        "startInSeconds": 3.76,
+        "endInSeconds": 3.9
+      },
+      {
+        "text": " בזבזים",
+        "startInSeconds": 3.9,
+        "endInSeconds": 4.38
+      },
+      {
+        "text": " זמן",
+        "startInSeconds": 4.38,
+        "endInSeconds": 4.66
+      },
+      {
+        "text": " על",
+        "startInSeconds": 4.66,
+        "endInSeconds": 4.82
+      },
+      {
+        "text": " מעקב.",
+        "startInSeconds": 4.82,
+        "endInSeconds": 5.3
+      }
+    ],
+    "model": "large-v3-turbo"
+  },
+  {
+    "start": 16,
+    "end": 19.5,
+    "text": "אפשר לבנות סוכן AI שיתפל בבעיה הזו כמובן,",
+    "words": [
+      {
+        "text": "אפשר",
+        "startInSeconds": 0.14,
+        "endInSeconds": 0.38
+      },
+      {
+        "text": " לבנות",
+        "startInSeconds": 0.38,
+        "endInSeconds": 0.78
+      },
+      {
+        "text": " סוכן",
+        "startInSeconds": 0.78,
+        "endInSeconds": 1.34
+      },
+      {
+        "text": " AI",
+        "startInSeconds": 1.34,
+        "endInSeconds": 1.62
+      },
+      {
+        "text": " שיתפל",
+        "startInSeconds": 1.62,
+        "endInSeconds": 2.16
+      },
+      {
+        "text": " בבעיה",
+        "startInSeconds": 2.16,
+        "endInSeconds": 2.62
+      },
+      {
+        "text": " הזו",
+        "startInSeconds": 2.62,
+        "endInSeconds": 2.8
+      },
+      {
+        "text": " כמובן,",
+        "startInSeconds": 2.8,
+        "endInSeconds": 3.32
+      }
+    ],
+    "model": "large-v3-turbo"
+  }
+]
