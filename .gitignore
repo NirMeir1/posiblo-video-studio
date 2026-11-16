@@ -4,6 +4,7 @@ node_modules/
 # Locally installed agent skills
 /.agents/skills/
 /.claude/skills/
+/.claude/settings.local.json
 
 # Build output and rendered videos (keep source media in public/ and src/)
 /dist/
@@ -18,11 +19,25 @@ node_modules/
 
 # Caches and test output
 .cache/
+.npm/
+.pnpm-store/
+.eslintcache
+.prettiercache
 coverage/
 *.tsbuildinfo
 /playwright-report/
 /test-results/
 /.playwright-mcp/
+
+# Local scratch files and interrupted Remotion imports
+/tmp/
+/temp/
+.remotion-import-*.tmp
+
+# Editor swap files
+*.swp
+*.swo
+*~
 
 # Logs
 *.log

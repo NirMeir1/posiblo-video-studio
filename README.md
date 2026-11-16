@@ -34,6 +34,16 @@ On PowerShell systems that block `npm.ps1`, use `npm.cmd` instead of `npm`.
 
 ## Creating a video
 
+When working with an agent in this repository, you can provide only a local video path:
+
+```text
+C:\Users\meirn\Videos\new-recording.mp4
+```
+
+Under [AGENTS.md](AGENTS.md), this starts the [social-media workflow](docs/social-media-video-workflow.md): inspect the footage, discover relevant docs/code/assets, complete a brief, edit in Remotion for organic Facebook Reels/Instagram Reels/TikTok, and document review and pending checks. The example path is illustrative. Optional details override the defaults; you do not need to paste the longer prompt.
+
+Default delivery is a Studio preview. Add `export MP4` to request a rendered deliverable. This is an instruction for the agent operating in this project, not a background watcher or a general-purpose CLI pipeline. Human review remains required before release, and nothing is uploaded automatically.
+
 1. Read [AGENTS.md](AGENTS.md) and the [video standard](docs/video-standard.md). Use the relevant installed Remotion skills when working with an agent.
 2. Copy and complete the [brief](docs/video-brief-template.md) and [review](docs/video-review-template.md) as `docs/videos/<slug>-brief.md` and `docs/videos/<slug>-review.md`.
 3. Preserve the footage; create a distinct composition and output filename. Adapt scenes and captions to the actual speech, and document at least one specific improvement over the approved reference. The transcription and caption-preparation scripts contain recording-specific paths and edits; adapt them before reuse.
