@@ -11,6 +11,11 @@ node_modules/
 /build/
 /out/
 
+# Python virtual environment (local Hebrew transcriber)
+/.venv/
+__pycache__/
+*.pyc
+
 # Local environment files
 .env
 .env.*

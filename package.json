@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@anthropic-ai/sdk": "1.5.0",
     "@huggingface/transformers": "4.2.0",
     "@mediabunny/server": "1.64.0",
     "@remotion/captions": "4.0.543",
@@ -36,7 +37,10 @@
     "render": "remotion render src/index.ts PosibloFirstTest out/not-every-business-needs-ai-posiblo-rerender.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=192k --concurrency=2 --is-production=false",
     "preview:render": "remotion render src/index.ts PosibloFirstTest out/preview.mp4 --frames=570-749 --codec=h264 --concurrency=2 --is-production=false",
     "verify:video": "node scripts/verify-deliverable.mjs",
-    "verify:baseline": "node scripts/verify-baseline.mjs"
+    "verify:baseline": "node scripts/verify-baseline.mjs",
+    "pipeline": "node scripts/pipeline/run.mjs",
+    "test:pipeline": "node --test \"tests/pipeline/*.test.mjs\"",
+    "setup:transcriber": "node scripts/pipeline/setup-transcriber.mjs"
   },
   "allowScripts": {
     "esbuild": false

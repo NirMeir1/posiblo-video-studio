@@ -10,7 +10,7 @@ In this repository, a user message providing a local video path as input, even w
 
 Follow `docs/social-media-video-workflow.md`, including its local-path intake and project-context discovery steps. Default targets are organic Facebook Reels, Instagram Reels, and TikTok vertical video. Infer optional audience/message details from the actual recording, record assumptions, and continue useful work. Ask only for information that blocks correct work, such as an inaccessible file or unresolved speech that needs confirmation. Default delivery is an edited Remotion Studio preview; export an MP4 when requested.
 
-**Authorization of paid services.** The pipeline's use of the Anthropic API in stage 5 (clip selection) and stage 8 (metadata), with the user's own key from `.env`, is authorized. Every other paid service, any upload, any publishing, and any purchase of distribution remain unauthorized without explicit approval from the user.
+**Authorization of paid services.** The pipeline's use of the Anthropic API in stage 5 (clip selection and scene plan) and stage 8 (metadata), with the user's own key from `.env`, is authorized. Every other paid service, any upload, any publishing, and any purchase of distribution remain unauthorized without explicit approval from the user.
 
 Before creating or modifying any Posiblo video, read `docs/video-standard.md`, `docs/video-brief-template.md`, and `docs/video-review-template.md`. Follow the installed Remotion skills relevant to the task.
 
@@ -20,7 +20,7 @@ Use `references/posiblo-v1/out/not-every-business-needs-ai-posiblo.mp4` as the a
 
 Match the standard's visual identity and quality, adapt graphics and timing to the actual speech, and document at least one specific improvement for every new video. Never invent speech or claim human caption review, visual inspection, or listening checks that did not happen.
 
-Use a completed brief and review record for each new video. The pipeline creates drafts as `docs/videos/<slug>-brief.md` and `docs/videos/<slug>-review.md`, filled only with facts it actually has. The following stay marked PENDING until a human actually does them, and the agent must never mark them as done: full playback with sound, phone-size inspection, fluent Hebrew caption review, the documented improvement over the reference, and the check of current platform requirements. Run relevant automated checks on the actual deliverable path. Report unresolved issues and pending human review explicitly. Do not mark an export release-ready solely because automated checks passed.
+Use a completed brief and review record for each new video. The pipeline writes drafts to `out/<slug>/review/<slug>-brief.md` and `out/<slug>/review/<slug>-review.md`, filled only with facts it actually has; complete them and save them as `docs/videos/<slug>-brief.md` and `docs/videos/<slug>-review.md`. The following stay marked PENDING until a human actually does them, and the agent must never mark them as done: full playback with sound, phone-size inspection, fluent Hebrew caption review, the documented improvement over the reference, and the check of current platform requirements. Run relevant automated checks on the actual deliverable path. Report unresolved issues and pending human review explicitly. Do not mark an export release-ready solely because automated checks passed.
 
 ## Pipeline rules
 
@@ -28,4 +28,8 @@ Use a completed brief and review record for each new video. The pipeline creates
 - The pipeline uses the full `ffmpeg` and `ffprobe` from PATH, not Remotion's restricted bundled binaries, and fails clearly if `silenceremove`, `loudnorm`, or `afftdn` are missing.
 - Never print, log, or commit secrets. `.env` is ignored by Git; `.env.example` holds placeholders only.
 - Never modify the original recording. All work happens on a copy in `out/<slug>/`.
+- Re-running the same command resumes: finished stages are skipped, and a finished run is never overwritten silently. Use `--rerun-from <stage>` to redo a stage and everything after it, or `--slug <name>` for a separate run. See `README.md` for stage outputs.
+- Stage 2 transcribes locally with the ivrit.ai Hebrew model through `faster-whisper` in `.venv` (set up with `npm run setup:transcriber`; model pinned by commit and SHA-256). `--transcriber whisper-webgpu` keeps the original transcriber available.
+- Stage 5 also writes a scene plan (where animated explanations help, and where they do not). The pipeline pauses before rendering until the user approves it. The agent may show the plan and the Studio preview, but must never run `--approve-scenes` or write the approval file itself; approval is the user's decision.
+- Run `npm run test:pipeline` (mocked API, no real calls) and `npm run lint` after changing pipeline or composition code.
 - Hebrew transcription and captions are machine-generated and can contain errors. Flag low-confidence words for review and never present captions as human-verified.

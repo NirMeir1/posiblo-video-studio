@@ -1,0 +1,61 @@
+{
+  "id": "posiblo-v1",
+  "description": "Worked example for the scene planner: the approved reference video (references/posiblo-v1, composition PosibloFirstTest), expressed in the planner's schema. Speech and scene times come from src/Composition.tsx, src/Motion.tsx and src/captions-final.json. The 'why' notes are an editorial reading of the reference written for the planner, not statements by the video's author.",
+  "sourceSha256": "6656ead9d4d2b42dd211e729df03a5d6f134da40a8c1611344897fcb02e5f261",
+  "durationMs": 42733,
+  "sentences": [
+    {"index": 0, "startMs": 220, "endMs": 1640, "text": "לא כל עסק צריך AI."},
+    {"index": 1, "startMs": 2820, "endMs": 7520, "text": "נניח שיש לכם עסק ואתם מקבלים פניות מלקוחות בוואטסאפ, באתר ובפייסבוק."},
+    {"index": 2, "startMs": 8800, "endMs": 12260, "text": "אתם מעתיקים פרטים ידנית, שוכחים לחזור לחלק מהלקוחות [unclear clause omitted from captions]"},
+    {"index": 3, "startMs": 14860, "endMs": 24160, "text": "עכשיו, אפשר לבנות סוכן AI שיטפל בבעיה הזו כמובן, אבל אולי בכלל מספיק לחבר בין המערכות וליצור אוטומציה פשוטה שתעשה את העבודה."},
+    {"index": 4, "startMs": 25140, "endMs": 26080, "text": "וזה בדיוק העניין."},
+    {"index": 5, "startMs": 27220, "endMs": 30700, "text": "המטרה היא לא להכניס בכל מחיר AI לעסק שלכם."},
+    {"index": 6, "startMs": 31300, "endMs": 35300, "text": "המטרה היא לחסוך לכם זמן לצמצם טעויות ולגרום לעסק לעבוד טוב יותר."},
+    {"index": 7, "startMs": 36060, "endMs": 41160, "text": "אז לפני שאתם משקיעים בטכנולוגיה חדשה, תשאלו את עצמכם, איזו בעיה בעצם אני מנסה לפתור?"}
+  ],
+  "decision": "Four scenes in 43 s, each tied to one idea the viewer should see rather than only hear: the manual workflow problem, the simpler connected workflow, the three business goals, and the closing question. The opening line is the on-screen title, and the two punchy lines in the middle stay on the speaker, because their force is in the delivery, not in a diagram.",
+  "scenes": [
+    {
+      "type": "flow", "startSentence": 1, "endSentence": 2,
+      "actualTiming": "4.8-14.3 s: starts as the channels are named and ends when the problem description ends.",
+      "heading": "הפניות מגיעות. מה קורה אחר כך?",
+      "items": [{"label": "וואטסאפ", "icon": "chat"}, {"label": "אתר", "icon": "web"}, {"label": "פייסבוק", "icon": "people"}, {"label": "טיפול ידני", "detail": "העתקה · חזרה ללקוחות · מעקב", "icon": "alert"}],
+      "drawnAs": "Three channel nodes converging into one manual-handling node, then two coral problem tags: 'פניות נשכחות', 'זמן על מעקב'.",
+      "why": "The speaker describes a concrete process (leads arrive in three places, then are handled by hand) and its failure points. A diagram makes the bottleneck visible at a glance; listening alone does not."
+    },
+    {
+      "type": "flow", "startSentence": 3, "endSentence": 3,
+      "actualTiming": "19.5-25 s: starts at 'אבל אולי בכלל מספיק', not at 'אפשר לבנות סוכן AI'; the scene shows the simpler option the speaker recommends, not the AI agent he sets aside.",
+      "heading": "אולי מספיק לחבר בין המערכות.",
+      "items": [{"label": "פנייה חדשה", "detail": "מכל ערוצי הפנייה", "icon": "chat"}, {"label": "אוטומציה פשוטה", "detail": "המערכות מחוברות זו לזו", "icon": "link"}, {"label": "המשך טיפול ומעקב", "icon": "check"}],
+      "drawnAs": "A three-step connected workflow with animated connectors; the automation step is highlighted in lime.",
+      "why": "The answer to the previous problem is again a process, so the same visual language shows the fix replacing the manual bottleneck. The scene illustrates the recommended path only."
+    },
+    {
+      "type": "cards", "startSentence": 6, "endSentence": 6,
+      "actualTiming": "31.1-35.9 s: exactly the sentence that lists the three goals.",
+      "heading": "טכנולוגיה עם תוצאה עסקית.",
+      "items": [{"label": "לחסוך זמן", "icon": "clock"}, {"label": "לצמצם טעויות", "icon": "check"}, {"label": "עסק שעובד טוב יותר", "icon": "spark"}],
+      "drawnAs": "Three outcome cards revealed one by one, about 1.2 s apart (fixed delays, not word-timed).",
+      "why": "A short list of three parallel outcomes, each a few words, is easier to remember as cards."
+    },
+    {
+      "type": "question", "startSentence": 7, "endSentence": 7,
+      "actualTiming": "38.2-42.7 s: starts at the question itself ('איזו בעיה...'), not at the start of the sentence, and holds to the end.",
+      "heading": "איזו בעיה אני מנסה לפתור?",
+      "items": [],
+      "drawnAs": "The question as large text, held to the end.",
+      "why": "The video's takeaway. Showing the question gives the viewer one thing to keep."
+    }
+  ],
+  "noScene": [
+    {"sentences": [0], "why": "The hook. It is the opening title on screen; a diagram would compete with the speaker's first line."},
+    {"sentences": [4, 5], "why": "Short punchy lines ('וזה בדיוק העניין', 'המטרה היא לא להכניס בכל מחיר AI'). Their force is in the delivery, so the speaker stays full screen between scenes."}
+  ],
+  "lessons": [
+    "Scenes illustrate what the speaker explains or recommends, not every noun he mentions.",
+    "Between scenes the speaker returns to full screen; that rhythm keeps the person central.",
+    "Headings may frame the idea in a few words (for example as a question) but add no facts.",
+    "A scene starts on the words it illustrates, which can be inside a sentence."
+  ]
+}
