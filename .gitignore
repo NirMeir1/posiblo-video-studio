@@ -11,6 +11,9 @@ node_modules/
 /build/
 /out/
 
+# Recording-specific processed media; keep locally, not in Git.
+/public/input/shootsolo-20261103-103615-take10-processed.mp4
+
 # Python virtual environment (local Hebrew transcriber)
 /.venv/
 __pycache__/

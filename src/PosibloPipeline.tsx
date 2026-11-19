@@ -21,6 +21,7 @@ export type PosibloPipelineProps = {
   width?: number;
   height?: number;
   captionBottom?: number;
+  showProgress?: boolean;
 };
 
 export const PIPELINE_FPS = 30;
@@ -84,7 +85,7 @@ const Speaker = ({src, trimBefore, scenes, scale}: {src: string; trimBefore: num
   </div>;
 };
 
-export const PosibloPipeline = ({source, captions, clip, title, scenes, captionBottom}: PosibloPipelineProps) => {
+export const PosibloPipeline = ({source, captions, clip, title, scenes, captionBottom, showProgress = true}: PosibloPipelineProps) => {
   const {fps, width, height} = useVideoConfig();
   const scale = width / 720;
   const trimBefore = Math.round(clip.startMs * fps / 1000);
@@ -103,6 +104,6 @@ export const PosibloPipeline = ({source, captions, clip, title, scenes, captionB
     <Interactive.Div name="Posiblo brand" style={{position: 'absolute', zIndex: 9, top: 54 * scale, left: 48 * scale, fontSize: 24 * scale, fontWeight: 700, letterSpacing: 1 * scale, color: palette.white}}>posiblo<span style={{color: palette.lime}}>.</span></Interactive.Div>
     {title.trim() ? <Sequence name="Opening hook" durationInFrames={3 * fps}><TitleCard title={title.trim()} scale={scale}/></Sequence> : null}
     <Captions captions={clipCaptions} scale={scale} bottom={bottom}/>
-    <Progress scale={scale}/>
+    {showProgress ? <Progress scale={scale}/> : null}
   </AbsoluteFill>;
 };

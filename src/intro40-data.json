@@ -1,0 +1,1449 @@
+{
+  "source": "input/shootsolo-20261103-103615-take10-processed.mp4",
+  "captions": [
+    {
+      "text": "כולם",
+      "startMs": 270,
+      "endMs": 790,
+      "timestampMs": 530,
+      "confidence": 0.9927
+    },
+    {
+      "text": " מדברים",
+      "startMs": 790,
+      "endMs": 1090,
+      "timestampMs": 940,
+      "confidence": 0.9996
+    },
+    {
+      "text": " היום",
+      "startMs": 1090,
+      "endMs": 1290,
+      "timestampMs": 1190,
+      "confidence": 0.9997
+    },
+    {
+      "text": " על",
+      "startMs": 1290,
+      "endMs": 1450,
+      "timestampMs": 1370,
+      "confidence": 0.9998
+    },
+    {
+      "text": " AI,",
+      "startMs": 1450,
+      "endMs": 1710,
+      "timestampMs": 1580,
+      "confidence": 0.934
+    },
+    {
+      "text": " סוכנים",
+      "startMs": 1810,
+      "endMs": 2330,
+      "timestampMs": 2070,
+      "confidence": 0.9994
+    },
+    {
+      "text": " ואוטומציות,",
+      "startMs": 2330,
+      "endMs": 3150,
+      "timestampMs": 2740,
+      "confidence": 0.9987
+    },
+    {
+      "text": " אבל",
+      "startMs": 3430,
+      "endMs": 3890,
+      "timestampMs": 3660,
+      "confidence": 0.9995
+    },
+    {
+      "text": " איך",
+      "startMs": 3890,
+      "endMs": 4050,
+      "timestampMs": 3970,
+      "confidence": 0.999
+    },
+    {
+      "text": " יודעים",
+      "startMs": 4050,
+      "endMs": 4290,
+      "timestampMs": 4170,
+      "confidence": 0.9993
+    },
+    {
+      "text": " מה",
+      "startMs": 4290,
+      "endMs": 4410,
+      "timestampMs": 4350,
+      "confidence": 0.9977
+    },
+    {
+      "text": " מכל",
+      "startMs": 4410,
+      "endMs": 4690,
+      "timestampMs": 4550,
+      "confidence": 0.9984
+    },
+    {
+      "text": " זה",
+      "startMs": 4690,
+      "endMs": 4830,
+      "timestampMs": 4760,
+      "confidence": 0.9998
+    },
+    {
+      "text": " באמת",
+      "startMs": 4830,
+      "endMs": 5230,
+      "timestampMs": 5030,
+      "confidence": 0.9998
+    },
+    {
+      "text": " מתאים",
+      "startMs": 5230,
+      "endMs": 5610,
+      "timestampMs": 5420,
+      "confidence": 0.9983
+    },
+    {
+      "text": " לכם?",
+      "startMs": 5610,
+      "endMs": 5970,
+      "timestampMs": 5790,
+      "confidence": 0.9997,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " היי,",
+      "startMs": 6283,
+      "endMs": 6963,
+      "timestampMs": 6623,
+      "confidence": 0.9437
+    },
+    {
+      "text": " אני",
+      "startMs": 6963,
+      "endMs": 7263,
+      "timestampMs": 7113,
+      "confidence": 0.998
+    },
+    {
+      "text": " ניר,",
+      "startMs": 7263,
+      "endMs": 7523,
+      "timestampMs": 7393,
+      "confidence": 0.9978
+    },
+    {
+      "text": " אני",
+      "startMs": 7723,
+      "endMs": 8103,
+      "timestampMs": 7913,
+      "confidence": 0.9985
+    },
+    {
+      "text": " מפתח",
+      "startMs": 8103,
+      "endMs": 8423,
+      "timestampMs": 8263,
+      "confidence": 0.9998
+    },
+    {
+      "text": " תוכנה",
+      "startMs": 8423,
+      "endMs": 8783,
+      "timestampMs": 8603,
+      "confidence": 0.9985
+    },
+    {
+      "text": " עם",
+      "startMs": 8783,
+      "endMs": 8903,
+      "timestampMs": 8843,
+      "confidence": 0.9998
+    },
+    {
+      "text": " 8",
+      "startMs": 8903,
+      "endMs": 9143,
+      "timestampMs": 9023,
+      "confidence": 0.7493
+    },
+    {
+      "text": " שנות",
+      "startMs": 9143,
+      "endMs": 9423,
+      "timestampMs": 9283,
+      "confidence": 0.9997
+    },
+    {
+      "text": " ניסיון",
+      "startMs": 9423,
+      "endMs": 9843,
+      "timestampMs": 9633,
+      "confidence": 0.9969
+    },
+    {
+      "text": " בתעשיית",
+      "startMs": 9843,
+      "endMs": 10483,
+      "timestampMs": 10163,
+      "confidence": 0.9987
+    },
+    {
+      "text": " ההייטק.",
+      "startMs": 10483,
+      "endMs": 10943,
+      "timestampMs": 10713,
+      "confidence": 0.9378,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " במהלך",
+      "startMs": 11283,
+      "endMs": 11963,
+      "timestampMs": 11623,
+      "confidence": 0.9996
+    },
+    {
+      "text": " השנים",
+      "startMs": 11963,
+      "endMs": 12223,
+      "timestampMs": 12093,
+      "confidence": 0.9998
+    },
+    {
+      "text": " עסקתי",
+      "startMs": 12223,
+      "endMs": 12663,
+      "timestampMs": 12443,
+      "confidence": 0.9998
+    },
+    {
+      "text": " בפיתוח",
+      "startMs": 12663,
+      "endMs": 13103,
+      "timestampMs": 12883,
+      "confidence": 0.9998
+    },
+    {
+      "text": " מערכות",
+      "startMs": 13103,
+      "endMs": 13583,
+      "timestampMs": 13343,
+      "confidence": 0.9998
+    },
+    {
+      "text": " ואוטומציות,",
+      "startMs": 13583,
+      "endMs": 14303,
+      "timestampMs": 13943,
+      "confidence": 0.9999
+    },
+    {
+      "text": " ובשנים",
+      "startMs": 14323,
+      "endMs": 14943,
+      "timestampMs": 14633,
+      "confidence": 0.9999
+    },
+    {
+      "text": " האחרונות",
+      "startMs": 14943,
+      "endMs": 15263,
+      "timestampMs": 15103,
+      "confidence": 0.9997
+    },
+    {
+      "text": " בפתרונות",
+      "startMs": 15263,
+      "endMs": 15763,
+      "timestampMs": 15513,
+      "confidence": 0.9973
+    },
+    {
+      "text": " מבוססי",
+      "startMs": 15763,
+      "endMs": 16283,
+      "timestampMs": 16023,
+      "confidence": 0.9992
+    },
+    {
+      "text": " בינה",
+      "startMs": 16283,
+      "endMs": 16503,
+      "timestampMs": 16393,
+      "confidence": 0.9986
+    },
+    {
+      "text": " מלאכותית.",
+      "startMs": 16503,
+      "endMs": 17103,
+      "timestampMs": 16803,
+      "confidence": 0.9996,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " מבחינתי",
+      "startMs": 17363,
+      "endMs": 18043,
+      "timestampMs": 17703,
+      "confidence": 0.9998
+    },
+    {
+      "text": " הטכנולוגיה",
+      "startMs": 18043,
+      "endMs": 18723,
+      "timestampMs": 18383,
+      "confidence": 0.9834
+    },
+    {
+      "text": " היא",
+      "startMs": 18723,
+      "endMs": 18943,
+      "timestampMs": 18833,
+      "confidence": 0.9978
+    },
+    {
+      "text": " לא",
+      "startMs": 18943,
+      "endMs": 19063,
+      "timestampMs": 19003,
+      "confidence": 0.9998
+    },
+    {
+      "text": " המטרה,",
+      "startMs": 19063,
+      "endMs": 19583,
+      "timestampMs": 19323,
+      "confidence": 0.9998
+    },
+    {
+      "text": " אלא",
+      "startMs": 19743,
+      "endMs": 20143,
+      "timestampMs": 19943,
+      "confidence": 0.9994
+    },
+    {
+      "text": " הדרך",
+      "startMs": 20143,
+      "endMs": 20423,
+      "timestampMs": 20283,
+      "confidence": 0.9992
+    },
+    {
+      "text": " לפתור",
+      "startMs": 20423,
+      "endMs": 20763,
+      "timestampMs": 20593,
+      "confidence": 0.9997
+    },
+    {
+      "text": " בעיות",
+      "startMs": 20763,
+      "endMs": 21083,
+      "timestampMs": 20923,
+      "confidence": 0.9999
+    },
+    {
+      "text": " שבאמת",
+      "startMs": 21083,
+      "endMs": 21503,
+      "timestampMs": 21293,
+      "confidence": 0.9996
+    },
+    {
+      "text": " חשובות",
+      "startMs": 21503,
+      "endMs": 21963,
+      "timestampMs": 21733,
+      "confidence": 0.9999
+    },
+    {
+      "text": " לכם.",
+      "startMs": 21963,
+      "endMs": 22303,
+      "timestampMs": 22133,
+      "confidence": 0.9986,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " אולי",
+      "startMs": 22423,
+      "endMs": 23043,
+      "timestampMs": 22733,
+      "confidence": 0.9995
+    },
+    {
+      "text": " יש",
+      "startMs": 23043,
+      "endMs": 23143,
+      "timestampMs": 23093,
+      "confidence": 0.9994
+    },
+    {
+      "text": " לכם",
+      "startMs": 23143,
+      "endMs": 23343,
+      "timestampMs": 23243,
+      "confidence": 0.9998
+    },
+    {
+      "text": " בעסק",
+      "startMs": 23343,
+      "endMs": 23703,
+      "timestampMs": 23523,
+      "confidence": 0.9998
+    },
+    {
+      "text": " תהליך",
+      "startMs": 23703,
+      "endMs": 24063,
+      "timestampMs": 23883,
+      "confidence": 0.9993
+    },
+    {
+      "text": " שגוזל",
+      "startMs": 24063,
+      "endMs": 24443,
+      "timestampMs": 24253,
+      "confidence": 0.999
+    },
+    {
+      "text": " יותר",
+      "startMs": 24443,
+      "endMs": 24603,
+      "timestampMs": 24523,
+      "confidence": 1
+    },
+    {
+      "text": " מדי",
+      "startMs": 24603,
+      "endMs": 24863,
+      "timestampMs": 24733,
+      "confidence": 0.993
+    },
+    {
+      "text": " זמן,",
+      "startMs": 24863,
+      "endMs": 25123,
+      "timestampMs": 24993,
+      "confidence": 0.9999
+    },
+    {
+      "text": " מערכות",
+      "startMs": 25303,
+      "endMs": 26123,
+      "timestampMs": 25713,
+      "confidence": 0.9994
+    },
+    {
+      "text": " שלא",
+      "startMs": 26123,
+      "endMs": 26363,
+      "timestampMs": 26243,
+      "confidence": 0.998
+    },
+    {
+      "text": " עובדות",
+      "startMs": 26363,
+      "endMs": 26683,
+      "timestampMs": 26523,
+      "confidence": 0.9997
+    },
+    {
+      "text": " טוב",
+      "startMs": 26683,
+      "endMs": 26823,
+      "timestampMs": 26753,
+      "confidence": 0.9993
+    },
+    {
+      "text": " יחד,",
+      "startMs": 26823,
+      "endMs": 27343,
+      "timestampMs": 27083,
+      "confidence": 0.999
+    },
+    {
+      "text": " או",
+      "startMs": 27343,
+      "endMs": 27723,
+      "timestampMs": 27533,
+      "confidence": 0.9991
+    },
+    {
+      "text": " בכלל",
+      "startMs": 27723,
+      "endMs": 28063,
+      "timestampMs": 27893,
+      "confidence": 0.9987
+    },
+    {
+      "text": " רעיון",
+      "startMs": 28063,
+      "endMs": 28383,
+      "timestampMs": 28223,
+      "confidence": 0.9829
+    },
+    {
+      "text": " לאתר",
+      "startMs": 28383,
+      "endMs": 28763,
+      "timestampMs": 28573,
+      "confidence": 0.9996
+    },
+    {
+      "text": " או",
+      "startMs": 28763,
+      "endMs": 28863,
+      "timestampMs": 28813,
+      "confidence": 0.9986
+    },
+    {
+      "text": " לאפליקציה",
+      "startMs": 28863,
+      "endMs": 29463,
+      "timestampMs": 29163,
+      "confidence": 0.9998
+    },
+    {
+      "text": " שאתם",
+      "startMs": 29463,
+      "endMs": 29683,
+      "timestampMs": 29573,
+      "confidence": 0.9979
+    },
+    {
+      "text": " רוצים",
+      "startMs": 29683,
+      "endMs": 29923,
+      "timestampMs": 29803,
+      "confidence": 0.9999
+    },
+    {
+      "text": " להפוך",
+      "startMs": 29923,
+      "endMs": 30283,
+      "timestampMs": 30103,
+      "confidence": 0.9995
+    },
+    {
+      "text": " למציאות.",
+      "startMs": 30283,
+      "endMs": 30843,
+      "timestampMs": 30563,
+      "confidence": 0.9993,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " אתם",
+      "startMs": 31177,
+      "endMs": 31537,
+      "timestampMs": 31357,
+      "confidence": 0.9957
+    },
+    {
+      "text": " לא",
+      "startMs": 31537,
+      "endMs": 31617,
+      "timestampMs": 31577,
+      "confidence": 0.9998
+    },
+    {
+      "text": " צריכים",
+      "startMs": 31617,
+      "endMs": 31917,
+      "timestampMs": 31767,
+      "confidence": 0.9999
+    },
+    {
+      "text": " לדעת",
+      "startMs": 31917,
+      "endMs": 32277,
+      "timestampMs": 32097,
+      "confidence": 0.9999
+    },
+    {
+      "text": " מראש",
+      "startMs": 32277,
+      "endMs": 32617,
+      "timestampMs": 32447,
+      "confidence": 0.9997
+    },
+    {
+      "text": " מהו",
+      "startMs": 32617,
+      "endMs": 32917,
+      "timestampMs": 32767,
+      "confidence": 0.996
+    },
+    {
+      "text": " הפתרון.",
+      "startMs": 32917,
+      "endMs": 33477,
+      "timestampMs": 33197,
+      "confidence": 0.9999,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " בדיוק",
+      "startMs": 33777,
+      "endMs": 34497,
+      "timestampMs": 34137,
+      "confidence": 0.9996
+    },
+    {
+      "text": " בשביל",
+      "startMs": 34497,
+      "endMs": 34837,
+      "timestampMs": 34667,
+      "confidence": 0.9996
+    },
+    {
+      "text": " זה",
+      "startMs": 34837,
+      "endMs": 34977,
+      "timestampMs": 34907,
+      "confidence": 0.9999
+    },
+    {
+      "text": " אני",
+      "startMs": 34977,
+      "endMs": 35337,
+      "timestampMs": 35157,
+      "confidence": 0.945
+    },
+    {
+      "text": " כאן.",
+      "startMs": 35337,
+      "endMs": 35697,
+      "timestampMs": 35517,
+      "confidence": 0.9998,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " הגישה",
+      "startMs": 36297,
+      "endMs": 36657,
+      "timestampMs": 36477,
+      "confidence": 0.9997
+    },
+    {
+      "text": " שלי",
+      "startMs": 36657,
+      "endMs": 36877,
+      "timestampMs": 36767,
+      "confidence": 1
+    },
+    {
+      "text": " היא",
+      "startMs": 36877,
+      "endMs": 36957,
+      "timestampMs": 36917,
+      "confidence": 0.9896
+    },
+    {
+      "text": " פשוטה.",
+      "startMs": 36957,
+      "endMs": 37337,
+      "timestampMs": 37147,
+      "confidence": 1,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " קודם",
+      "startMs": 37537,
+      "endMs": 38097,
+      "timestampMs": 37817,
+      "confidence": 0.9996
+    },
+    {
+      "text": " כל",
+      "startMs": 38097,
+      "endMs": 38237,
+      "timestampMs": 38167,
+      "confidence": 0.9618
+    },
+    {
+      "text": " אני",
+      "startMs": 38237,
+      "endMs": 38377,
+      "timestampMs": 38307,
+      "confidence": 0.8697
+    },
+    {
+      "text": " מקשיב.",
+      "startMs": 38377,
+      "endMs": 38837,
+      "timestampMs": 38607,
+      "confidence": 0.9994,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " אני",
+      "startMs": 39117,
+      "endMs": 39537,
+      "timestampMs": 39327,
+      "confidence": 0.9991
+    },
+    {
+      "text": " רוצה",
+      "startMs": 39537,
+      "endMs": 39777,
+      "timestampMs": 39657,
+      "confidence": 1
+    },
+    {
+      "text": " להבין",
+      "startMs": 39777,
+      "endMs": 40117,
+      "timestampMs": 39947,
+      "confidence": 1
+    },
+    {
+      "text": " מה",
+      "startMs": 40117,
+      "endMs": 40377,
+      "timestampMs": 40247,
+      "confidence": 0.9973
+    },
+    {
+      "text": " אתם",
+      "startMs": 40377,
+      "endMs": 40617,
+      "timestampMs": 40497,
+      "confidence": 1
+    },
+    {
+      "text": " עושים,",
+      "startMs": 40617,
+      "endMs": 40977,
+      "timestampMs": 40797,
+      "confidence": 0.9999
+    },
+    {
+      "text": " ומה",
+      "startMs": 41117,
+      "endMs": 41697,
+      "timestampMs": 41407,
+      "confidence": 0.999
+    },
+    {
+      "text": " בדיוק",
+      "startMs": 41697,
+      "endMs": 41977,
+      "timestampMs": 41837,
+      "confidence": 1
+    },
+    {
+      "text": " מפריע",
+      "startMs": 41977,
+      "endMs": 42377,
+      "timestampMs": 42177,
+      "confidence": 0.9999
+    },
+    {
+      "text": " לכם",
+      "startMs": 42377,
+      "endMs": 42637,
+      "timestampMs": 42507,
+      "confidence": 0.9999
+    },
+    {
+      "text": " בעסק.",
+      "startMs": 42637,
+      "endMs": 43177,
+      "timestampMs": 42907,
+      "confidence": 0.9979,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " מה",
+      "startMs": 43177,
+      "endMs": 43597,
+      "timestampMs": 43387,
+      "confidence": 0.9991
+    },
+    {
+      "text": " הייתם",
+      "startMs": 43597,
+      "endMs": 43817,
+      "timestampMs": 43707,
+      "confidence": 0.9586
+    },
+    {
+      "text": " רוצים",
+      "startMs": 43817,
+      "endMs": 44077,
+      "timestampMs": 43947,
+      "confidence": 0.9999
+    },
+    {
+      "text": " לשנות?",
+      "startMs": 44077,
+      "endMs": 44577,
+      "timestampMs": 44327,
+      "confidence": 0.9998,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " רק",
+      "startMs": 45037,
+      "endMs": 45437,
+      "timestampMs": 45237,
+      "confidence": 0.9995
+    },
+    {
+      "text": " אחר",
+      "startMs": 45437,
+      "endMs": 45897,
+      "timestampMs": 45667,
+      "confidence": 0.9995
+    },
+    {
+      "text": " כך",
+      "startMs": 45897,
+      "endMs": 46157,
+      "timestampMs": 46027,
+      "confidence": 0.9959
+    },
+    {
+      "text": " אנחנו",
+      "startMs": 46157,
+      "endMs": 46817,
+      "timestampMs": 46487,
+      "confidence": 0.8465
+    },
+    {
+      "text": " בוחרים",
+      "startMs": 46817,
+      "endMs": 47177,
+      "timestampMs": 46997,
+      "confidence": 0.9997
+    },
+    {
+      "text": " את",
+      "startMs": 47177,
+      "endMs": 47277,
+      "timestampMs": 47227,
+      "confidence": 0.9983
+    },
+    {
+      "text": " הפתרון",
+      "startMs": 47277,
+      "endMs": 47657,
+      "timestampMs": 47467,
+      "confidence": 0.9999
+    },
+    {
+      "text": " הנכון",
+      "startMs": 47657,
+      "endMs": 48137,
+      "timestampMs": 47897,
+      "confidence": 0.9986
+    },
+    {
+      "text": " ביותר",
+      "startMs": 48137,
+      "endMs": 48537,
+      "timestampMs": 48337,
+      "confidence": 0.9998
+    },
+    {
+      "text": " עבורכם.",
+      "startMs": 48537,
+      "endMs": 49077,
+      "timestampMs": 48807,
+      "confidence": 0.9992,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " לפעמים",
+      "startMs": 49577,
+      "endMs": 50097,
+      "timestampMs": 49837,
+      "confidence": 0.9998
+    },
+    {
+      "text": " זו",
+      "startMs": 50097,
+      "endMs": 50257,
+      "timestampMs": 50177,
+      "confidence": 0.8046
+    },
+    {
+      "text": " אוטומציה,",
+      "startMs": 50257,
+      "endMs": 50857,
+      "timestampMs": 50557,
+      "confidence": 0.9999
+    },
+    {
+      "text": " לפעמים",
+      "startMs": 51077,
+      "endMs": 51657,
+      "timestampMs": 51367,
+      "confidence": 0.9998
+    },
+    {
+      "text": " מערכת",
+      "startMs": 51657,
+      "endMs": 52157,
+      "timestampMs": 51907,
+      "confidence": 0.9997
+    },
+    {
+      "text": " או",
+      "startMs": 52157,
+      "endMs": 52237,
+      "timestampMs": 52197,
+      "confidence": 0.999
+    },
+    {
+      "text": " אפליקציה,",
+      "startMs": 52237,
+      "endMs": 52897,
+      "timestampMs": 52567,
+      "confidence": 0.9999
+    },
+    {
+      "text": " ולפעמים",
+      "startMs": 53117,
+      "endMs": 53837,
+      "timestampMs": 53477,
+      "confidence": 0.9995
+    },
+    {
+      "text": " משהו",
+      "startMs": 53837,
+      "endMs": 54137,
+      "timestampMs": 53987,
+      "confidence": 0.9813
+    },
+    {
+      "text": " הרבה",
+      "startMs": 54137,
+      "endMs": 54357,
+      "timestampMs": 54247,
+      "confidence": 0.9997
+    },
+    {
+      "text": " יותר",
+      "startMs": 54357,
+      "endMs": 54557,
+      "timestampMs": 54457,
+      "confidence": 1
+    },
+    {
+      "text": " פשוט.",
+      "startMs": 54557,
+      "endMs": 54917,
+      "timestampMs": 54737,
+      "confidence": 0.9999,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " מה",
+      "startMs": 55283,
+      "endMs": 55683,
+      "timestampMs": 55483,
+      "confidence": 0.995
+    },
+    {
+      "text": " שחשוב",
+      "startMs": 55683,
+      "endMs": 56123,
+      "timestampMs": 55903,
+      "confidence": 0.9998
+    },
+    {
+      "text": " לי",
+      "startMs": 56123,
+      "endMs": 56343,
+      "timestampMs": 56233,
+      "confidence": 0.9998
+    },
+    {
+      "text": " הוא",
+      "startMs": 56343,
+      "endMs": 56803,
+      "timestampMs": 56573,
+      "confidence": 0.6528
+    },
+    {
+      "text": " שתקבלו",
+      "startMs": 56803,
+      "endMs": 57243,
+      "timestampMs": 57023,
+      "confidence": 0.999
+    },
+    {
+      "text": " פתרון",
+      "startMs": 57243,
+      "endMs": 57643,
+      "timestampMs": 57443,
+      "confidence": 0.9991
+    },
+    {
+      "text": " שבאמת",
+      "startMs": 57643,
+      "endMs": 58303,
+      "timestampMs": 57973,
+      "confidence": 0.9998
+    },
+    {
+      "text": " מתאים",
+      "startMs": 58303,
+      "endMs": 58763,
+      "timestampMs": 58533,
+      "confidence": 0.9999
+    },
+    {
+      "text": " לכם",
+      "startMs": 58763,
+      "endMs": 59123,
+      "timestampMs": 58943,
+      "confidence": 0.9994
+    },
+    {
+      "text": " ואני",
+      "startMs": 59543,
+      "endMs": 59943,
+      "timestampMs": 59743,
+      "confidence": 0.8339
+    },
+    {
+      "text": " כאן",
+      "startMs": 59943,
+      "endMs": 60203,
+      "timestampMs": 60073,
+      "confidence": 1
+    },
+    {
+      "text": " כדי",
+      "startMs": 60203,
+      "endMs": 60423,
+      "timestampMs": 60313,
+      "confidence": 0.9998
+    },
+    {
+      "text": " ללוות",
+      "startMs": 60423,
+      "endMs": 60763,
+      "timestampMs": 60593,
+      "confidence": 0.9952
+    },
+    {
+      "text": " אתכם",
+      "startMs": 60763,
+      "endMs": 61023,
+      "timestampMs": 60893,
+      "confidence": 0.9995
+    },
+    {
+      "text": " אישית",
+      "startMs": 61023,
+      "endMs": 61363,
+      "timestampMs": 61193,
+      "confidence": 0.9999
+    },
+    {
+      "text": " מהשיחה",
+      "startMs": 61883,
+      "endMs": 62363,
+      "timestampMs": 62123,
+      "confidence": 0.9726
+    },
+    {
+      "text": " הראשונה",
+      "startMs": 62363,
+      "endMs": 62823,
+      "timestampMs": 62593,
+      "confidence": 0.9997
+    },
+    {
+      "text": " ועד",
+      "startMs": 62823,
+      "endMs": 63323,
+      "timestampMs": 63073,
+      "confidence": 0.9965
+    },
+    {
+      "text": " שהפתרון",
+      "startMs": 63323,
+      "endMs": 63863,
+      "timestampMs": 63593,
+      "confidence": 0.9999
+    },
+    {
+      "text": " עובד.",
+      "startMs": 63863,
+      "endMs": 64143,
+      "timestampMs": 64003,
+      "confidence": 0.9989,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " אז",
+      "startMs": 64570,
+      "endMs": 64970,
+      "timestampMs": 64770,
+      "confidence": 0.9939
+    },
+    {
+      "text": " אם",
+      "startMs": 64970,
+      "endMs": 65070,
+      "timestampMs": 65020,
+      "confidence": 0.9995
+    },
+    {
+      "text": " יש",
+      "startMs": 65070,
+      "endMs": 65190,
+      "timestampMs": 65130,
+      "confidence": 0.9997
+    },
+    {
+      "text": " לכם",
+      "startMs": 65190,
+      "endMs": 65430,
+      "timestampMs": 65310,
+      "confidence": 0.9998
+    },
+    {
+      "text": " בעיה",
+      "startMs": 65430,
+      "endMs": 65890,
+      "timestampMs": 65660,
+      "confidence": 0.9997
+    },
+    {
+      "text": " שאתם",
+      "startMs": 65890,
+      "endMs": 66170,
+      "timestampMs": 66030,
+      "confidence": 0.9996
+    },
+    {
+      "text": " רוצים",
+      "startMs": 66170,
+      "endMs": 66450,
+      "timestampMs": 66310,
+      "confidence": 1
+    },
+    {
+      "text": " לפתור",
+      "startMs": 66450,
+      "endMs": 66870,
+      "timestampMs": 66660,
+      "confidence": 0.9995
+    },
+    {
+      "text": " או",
+      "startMs": 66870,
+      "endMs": 67330,
+      "timestampMs": 67100,
+      "confidence": 0.9107
+    },
+    {
+      "text": " רעיון",
+      "startMs": 67330,
+      "endMs": 67710,
+      "timestampMs": 67520,
+      "confidence": 0.9997
+    },
+    {
+      "text": " שאתם",
+      "startMs": 67710,
+      "endMs": 67950,
+      "timestampMs": 67830,
+      "confidence": 0.9998
+    },
+    {
+      "text": " רוצים",
+      "startMs": 67950,
+      "endMs": 68230,
+      "timestampMs": 68090,
+      "confidence": 0.9999
+    },
+    {
+      "text": " לקדם,",
+      "startMs": 68230,
+      "endMs": 68650,
+      "timestampMs": 68440,
+      "confidence": 0.9999
+    },
+    {
+      "text": " אני",
+      "startMs": 68710,
+      "endMs": 69130,
+      "timestampMs": 68920,
+      "confidence": 0.9997
+    },
+    {
+      "text": " מזמין",
+      "startMs": 69130,
+      "endMs": 69430,
+      "timestampMs": 69280,
+      "confidence": 0.9999
+    },
+    {
+      "text": " אתכם",
+      "startMs": 69430,
+      "endMs": 69570,
+      "timestampMs": 69500,
+      "confidence": 0.9999
+    },
+    {
+      "text": " לפגישת",
+      "startMs": 69570,
+      "endMs": 70030,
+      "timestampMs": 69800,
+      "confidence": 0.9996
+    },
+    {
+      "text": " היכרות",
+      "startMs": 70030,
+      "endMs": 70390,
+      "timestampMs": 70210,
+      "confidence": 0.9918
+    },
+    {
+      "text": " ומיפוי",
+      "startMs": 70390,
+      "endMs": 70770,
+      "timestampMs": 70580,
+      "confidence": 0.9948
+    },
+    {
+      "text": " ראשוני",
+      "startMs": 70770,
+      "endMs": 71210,
+      "timestampMs": 70990,
+      "confidence": 0.9985
+    },
+    {
+      "text": " לגמרי",
+      "startMs": 71210,
+      "endMs": 71890,
+      "timestampMs": 71550,
+      "confidence": 0.9982
+    },
+    {
+      "text": " בחינם.",
+      "startMs": 71890,
+      "endMs": 72650,
+      "timestampMs": 72270,
+      "confidence": 0.9904,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " כן,",
+      "startMs": 72810,
+      "endMs": 73210,
+      "timestampMs": 73010,
+      "confidence": 0.9968
+    },
+    {
+      "text": " כן,",
+      "startMs": 73270,
+      "endMs": 73370,
+      "timestampMs": 73320,
+      "confidence": 0.9996
+    },
+    {
+      "text": " בחינם.",
+      "startMs": 73510,
+      "endMs": 73930,
+      "timestampMs": 73720,
+      "confidence": 0.9998,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " בפגישה",
+      "startMs": 74343,
+      "endMs": 75143,
+      "timestampMs": 74743,
+      "confidence": 0.9996
+    },
+    {
+      "text": " נבין",
+      "startMs": 75143,
+      "endMs": 75543,
+      "timestampMs": 75343,
+      "confidence": 0.9931
+    },
+    {
+      "text": " יחד",
+      "startMs": 75543,
+      "endMs": 75883,
+      "timestampMs": 75713,
+      "confidence": 0.9999
+    },
+    {
+      "text": " את",
+      "startMs": 75883,
+      "endMs": 76003,
+      "timestampMs": 75943,
+      "confidence": 1
+    },
+    {
+      "text": " האתגר",
+      "startMs": 76003,
+      "endMs": 76443,
+      "timestampMs": 76223,
+      "confidence": 0.9996
+    },
+    {
+      "text": " שלכם",
+      "startMs": 76443,
+      "endMs": 76943,
+      "timestampMs": 76693,
+      "confidence": 0.9999
+    },
+    {
+      "text": " ונתחיל",
+      "startMs": 76943,
+      "endMs": 77663,
+      "timestampMs": 77303,
+      "confidence": 0.9934
+    },
+    {
+      "text": " לבחון",
+      "startMs": 77663,
+      "endMs": 77983,
+      "timestampMs": 77823,
+      "confidence": 0.9999
+    },
+    {
+      "text": " כיוונים",
+      "startMs": 77983,
+      "endMs": 78383,
+      "timestampMs": 78183,
+      "confidence": 0.9993
+    },
+    {
+      "text": " אפשריים",
+      "startMs": 78383,
+      "endMs": 78783,
+      "timestampMs": 78583,
+      "confidence": 0.9993
+    },
+    {
+      "text": " לפתרון.",
+      "startMs": 78783,
+      "endMs": 79383,
+      "timestampMs": 79083,
+      "confidence": 0.9999,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " אז",
+      "startMs": 79663,
+      "endMs": 80063,
+      "timestampMs": 79863,
+      "confidence": 0.9996
+    },
+    {
+      "text": " בואו",
+      "startMs": 80063,
+      "endMs": 80303,
+      "timestampMs": 80183,
+      "confidence": 0.9998
+    },
+    {
+      "text": " נדבר,",
+      "startMs": 80303,
+      "endMs": 80683,
+      "timestampMs": 80493,
+      "confidence": 0.9999
+    },
+    {
+      "text": " נחשוב",
+      "startMs": 80883,
+      "endMs": 81543,
+      "timestampMs": 81213,
+      "confidence": 0.9998
+    },
+    {
+      "text": " יחד",
+      "startMs": 81543,
+      "endMs": 81963,
+      "timestampMs": 81753,
+      "confidence": 0.9999
+    },
+    {
+      "text": " ונראה",
+      "startMs": 81963,
+      "endMs": 82603,
+      "timestampMs": 82283,
+      "confidence": 0.992
+    },
+    {
+      "text": " איך",
+      "startMs": 82603,
+      "endMs": 82783,
+      "timestampMs": 82693,
+      "confidence": 1
+    },
+    {
+      "text": " אפשר",
+      "startMs": 82783,
+      "endMs": 83043,
+      "timestampMs": 82913,
+      "confidence": 1
+    },
+    {
+      "text": " להתקדם.",
+      "startMs": 83043,
+      "endMs": 83523,
+      "timestampMs": 83283,
+      "confidence": 0.9999,
+      "pageBreakAfter": true
+    },
+    {
+      "text": " תודה",
+      "startMs": 83910,
+      "endMs": 84033,
+      "timestampMs": 83972,
+      "confidence": 0.5157
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "type": "flow",
+      "startMs": 37536.667,
+      "endMs": 49076.667,
+      "heading": "הגישה שלי: קודם מקשיבים",
+      "items": [
+        {
+          "label": "מקשיבים קודם",
+          "detail": "מה אתם עושים בעסק",
+          "icon": "chat"
+        },
+        {
+          "label": "מבינים מה מפריע",
+          "detail": "מה בדיוק מפריע לכם",
+          "icon": "list"
+        },
+        {
+          "label": "בוחרים פתרון",
+          "detail": "רק אחר כך, הפתרון המתאים לכם",
+          "icon": "check"
+        }
+      ]
+    }
+  ],
+  "clip": {
+    "startMs": 0,
+    "endMs": 84033.33333333334
+  },
+  "title": "איך יודעים מה באמת מתאים לעסק שלכם?",
+  "width": 1080,
+  "height": 1920
+}
