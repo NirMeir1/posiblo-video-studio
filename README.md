@@ -32,8 +32,8 @@ npm run pipeline -- "C:\path\to\recording.mp4"
 The pipeline copies the recording, transcribes Hebrew locally, cleans cuts and audio, selects clips, and prepares captions and animated scenes. It pauses before rendering for **your scene-plan approval**.
 
 1. Read the generated `scene-plan.md` and preview it using the Studio command printed by the pipeline.
-2. Edit the plan if needed, then approve it yourself using the printed `--approve-scenes` command. Agents must not approve it for you.
-3. After rendering, start with `out/<slug>/summary.md` for exports, metadata, and verification results.
+2. Edit the plan if needed, then approve it using the printed `--approve-scenes` command. When you give an agent only a video path, the agent reviews and approves the plan for you (see [AGENTS.md](AGENTS.md)).
+3. After rendering and checks, the finished videos and their post text (`<slug>-metadata.json`) are copied to `C:\Edit Videos` (change it with `POSIBLO_DELIVERY_DIR` in `.env`). Start with `out/<slug>/summary.md` for exports, metadata, and verification results.
 
 Run the same command to resume an interrupted run. Use `--slug <name>` for a separate run or `--rerun-from <stage>` to redo a stage and everything after it. See the [reference guide](docs/project-guide.md#one-command-pipeline) for stages, output paths, preview commands, and troubleshooting.
 
@@ -43,7 +43,15 @@ Run the same command to resume an interrupted run. Use `--slug <name>` for a sep
 
 ## Work with an agent
 
-Provide a local video path to start the workflow in [AGENTS.md](AGENTS.md). The agent runs the pipeline, completes the brief and review, and polishes the edit in Studio. Default delivery is a Studio preview; add `export MP4` to request an export.
+Provide a local video path and nothing else. Under [AGENTS.md](AGENTS.md), the agent then does the rest alone:
+- runs the pipeline;
+- reviews, corrects and approves the scene plan;
+- renders the full video and clips to MP4;
+- writes the post metadata and runs the checks;
+- completes the brief and review;
+- copies the finished videos to `C:\Edit Videos` and reports the file paths.
+
+Say "preview only" or "wait for my approval" to keep the approval step for yourself. Nothing is uploaded or published, and human review of playback and captions is still needed before posting.
 
 ## Technologies and tools
 

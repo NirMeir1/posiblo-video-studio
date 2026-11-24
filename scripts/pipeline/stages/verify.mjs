@@ -1,12 +1,14 @@
 // Stage 9: run the existing scripts/verify-deliverable.mjs on every export with the caption
 // timeline that export actually shows, re-check source preservation and the reference archive,
 // write draft brief/review records and print a summary that states the pending human checks.
+// Verified exports (and metadata.json) are then copied to the delivery folder (lib/delivery.mjs).
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawn} from 'node:child_process';
 import {runPaths, rel} from '../lib/paths.mjs';
 import {readJson, sha256File, writeJson, writeText} from '../lib/util.mjs';
 import {draftBrief, draftReview} from '../lib/drafts.mjs';
+import {deliver, deliveryDir} from '../lib/delivery.mjs';
 
 export const MANUAL_CHECKS = [
   'Full playback of every export with sound (voice clarity, lip sync, every cut point)',
@@ -43,6 +45,14 @@ export const verify = async ({runDir, slug, repoRoot, state, log}) => {
   const preservation = {originalPath: state.source.originalPath, originalUnchanged: originalNow === state.source.sha256, copyMatchesOriginal: copyNow === state.source.sha256, originalSha256: state.source.sha256};
   const baseline = await runCapture([path.join(repoRoot, 'scripts', 'verify-baseline.mjs')], repoRoot);
 
+  // Delivery depends on each export's own checks and source preservation, not on the reference archive check.
+  const delivery = await deliver({
+    dir: deliveryDir(), log,
+    sourcePreserved: preservation.originalUnchanged && preservation.copyMatchesOriginal,
+    exports: results.map(r => ({name: r.name, file: path.join(runDir, r.output), automatedPass: r.automatedPass})),
+    extras: [{file: paths.metadata.file, as: `${slug}-metadata.json`}],
+  });
+
   const flags = readJson(paths.captions.flags);
   const loudness = readJson(paths.audio.loudness);
   const editMap = readJson(paths.cut.editMap);
@@ -53,14 +63,14 @@ export const verify = async ({runDir, slug, repoRoot, state, log}) => {
   const summary = {
     slug, runDir, createdAt: new Date().toISOString(), automatedPass, releaseReady: false,
     releaseReadyReason: 'Not release-ready: human checks below are pending. Automated checks do not establish release readiness.',
-    exports: results, sourcePreservation: preservation, baselineIntegrity: {passed: baseline.code === 0, output: baseline.out.trim()},
+    exports: results, delivery, sourcePreservation: preservation, baselineIntegrity: {passed: baseline.code === 0, output: baseline.out.trim()},
     cut: {sourceSeconds: editMap.sourceDurationMs / 1000, editedSeconds: editMap.editedDurationMs / 1000, cuts: editMap.removals.length},
     loudness: {before: loudness.before.integratedLufs, after: loudness.after.integratedLufs, truePeak: loudness.after.truePeakDbtp, warnings: loudness.warnings},
     captions: flags.summary, clips: {count: clips.clips.length, note: clips.note},
     scenePlan: {scenes: scenePlan.scenes.length, model: scenePlan.model ?? null, approvedAt: sceneApproval?.approvedAt ?? null, decision: scenePlan.decision ?? null},
     pendingHumanChecks: MANUAL_CHECKS.map(check => ({check, status: 'PENDING'})),
     alsoPending: ['Documented improvement over the v1 reference', 'Current platform requirements checked from official sources', 'Review of every automatic cut, the generated on-screen titles and metadata.json'],
-    notUploaded: 'Nothing was uploaded or published. All files are local in this folder.',
+    notUploaded: 'Nothing was uploaded or published. All files are local: this folder and the delivery folder.',
   };
   writeJson(paths.verify.summaryJson, summary);
   writeText(paths.verify.brief(slug), draftBrief({slug, state, provenance, editMap, loudness, flags, clips, manifest}));
@@ -73,6 +83,10 @@ export const verify = async ({runDir, slug, repoRoot, state, log}) => {
     `Release status: NOT release-ready. Human review is pending.`, '',
     '## Exports',
     ...results.map(r => `- ${r.output}: ${r.automatedPass ? 'automated checks passed' : `FAILED${r.error ? ` (${r.error})` : ''}`}; report ${r.report}`), '',
+    '## Delivered',
+    `Folder: ${delivery.dir}`,
+    ...(delivery.delivered.length ? delivery.delivered.map(d => `- ${d.file}`) : ['- nothing delivered']),
+    ...delivery.skipped.map(s => `- NOT delivered: ${s.name} (${s.reason})`), '',
     `Source preserved: original unchanged ${preservation.originalUnchanged ? 'yes' : 'NO'}, copy identical ${preservation.copyMatchesOriginal ? 'yes' : 'NO'}. Reference archive: ${baseline.code === 0 ? 'intact' : 'CHECK FAILED'}.`,
     `Clean cut: ${summary.cut.sourceSeconds.toFixed(1)} s -> ${summary.cut.editedSeconds.toFixed(1)} s, ${summary.cut.cuts} cuts (03-clean-cut/edit-map.json).`,
     `Loudness: ${summary.loudness.before} -> ${summary.loudness.after} LUFS (target -14), true peak ${summary.loudness.truePeak} dBTP.${summary.loudness.warnings.length ? ` Warnings: ${summary.loudness.warnings.join(' ')}` : ''}`,

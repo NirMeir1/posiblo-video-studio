@@ -11,7 +11,7 @@ When the user supplies a video path as input in this repository's agent chat, st
 3. Preserve the original. Work from a uniquely named copy under `public/input/` when needed, avoid filename collisions, and keep temporary/generated material inside the workspace. Do not overwrite an existing source or expose a file outside the project through a server. The pipeline already works on its own copy in `out/<slug>/01-ingest/` and records the original's hash.
 4. Choose a unique output slug and composition. Infer the message, audience, and suitable scenes from the recording. If the content does not support a reasonable inference, record the uncertainty and ask for the essential missing direction while continuing independent checks.
 5. Default to organic Facebook Reels, Instagram Reels, and TikTok, a vertical layout, the original speaker/voice, and the existing Posiblo visual standard. Determine caption language from the recording; apply Hebrew RTL rules when relevant. Do not invent an offer, savings claim, customer outcome, or dialogue.
-6. Proceed through briefing, editing, preview, inspection, and review documentation. When the pipeline ran, start from its draft records in `out/<slug>/review/`, its `summary.md`, and the review flags in `06-captions/review-flags.json`; save the completed records under `docs/videos/`. A path alone requests the edited Studio preview. An accompanying export/MP4 request also authorizes rendering to a new output path. Publication and paid distribution require their own authorization.
+6. Proceed through briefing, editing, preview, inspection, and review documentation. When the pipeline ran, start from its draft records in `out/<slug>/review/`, its `summary.md`, and the review flags in `06-captions/review-flags.json`; save the completed records under `docs/videos/`. A path alone requests the finished MP4s. Under the standing authorization in `AGENTS.md`, the agent reviews and approves the scene plan itself (`--approve-scenes`) and lets the pipeline render, write metadata, and verify. Publication and paid distribution require their own authorization.
 
 Human caption review and inaccessible platform previews can remain pending while editing proceeds. They must remain visible in the final handoff and prevent an unsupported release-ready claim.
 
@@ -41,7 +41,7 @@ The purpose is to apply all relevant project knowledge, not to concatenate every
 
 Create `docs/videos/<slug>-brief.md` from the template. Inspect the actual input and record audience, main message, truthful proof, desired action, footage, and planned speech-aligned scenes.
 
-Name each intended platform and placement, and distinguish organic from paid. If unspecified, record a provisional plan for organic Facebook Reels, Instagram Reels, and TikTok vertical video. This is a planning assumption, not confirmation that every placement accepts the export. Do not assume paid distribution or render extra variants without a need. Default to a Studio preview unless export is requested.
+Name each intended platform and placement, and distinguish organic from paid. If unspecified, record a provisional plan for organic Facebook Reels, Instagram Reels, and TikTok vertical video. This is a planning assumption, not confirmation that every placement accepts the export. Do not assume paid distribution or render extra variants without a need. Default to the pipeline's rendered MP4s (full video and clips); a video path counts as the export request.
 
 Add one applicability row for each intended placement:
 
@@ -71,7 +71,7 @@ Include a per-placement verdict and supporting preview/spec evidence. State sepa
 
 ## 6. Export and release only when applicable
 
-When export is requested, render to the unique path and run the project's video verification command on that exact deliverable, as specified in the video standard. Check baseline integrity as required. Record commands and report paths.
+When export is requested (a video path alone counts as a request), render to the unique path and run the project's video verification command on that exact deliverable, as specified in the video standard. Check baseline integrity as required. Record commands and report paths.
 
 The full export must be watched with sound and captions reviewed against audio by a fluent Hebrew listener before release. Record reviewer and date. If those checks or placement checks cannot be completed, deliver with the specific pending status and next action. Automated checks alone do not establish release readiness. Do not publish or buy distribution without authorization.
 

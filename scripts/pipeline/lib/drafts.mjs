@@ -29,7 +29,7 @@ Generated ${new Date().toISOString()} from out/${slug}/. Fields marked ${P} need
 - Final output paths: ${manifest.exports.map(e => `\`out/${slug}/${e.output}\``).join(', ')}
 - Caption JSON and SRT paths: \`out/${slug}/06-captions/captions.json\`, \`out/${slug}/06-captions/captions.srt\`; per-export rebased captions in \`out/${slug}/07-render/captions/\`
 - Opening hook: generated on-screen title "${clips.fullVideoTitle ?? '(none)'}" - machine-generated, ${P} review
-- Speech timestamps and planned explanatory scenes: see \`out/${slug}/05-clip-selection/scene-plan.md\` (machine judgment, approved by a person with --approve-scenes before rendering)
+- Speech timestamps and planned explanatory scenes: see \`out/${slug}/05-clip-selection/scene-plan.md\` (machine judgment, approved with --approve-scenes before rendering; record whether the user or the agent approved it)
 - Planned improvement over v1, and how it will be checked: ${P}
 - Intentional deviations / trims / audio processing: automatic clean cut (${editMap.removals.length} cuts, ${(editMap.removedMs / 1000).toFixed(2)} s removed; see \`03-clean-cut/edit-map.json\`); denoise \`${loudness.denoiseFilter}\`; loudness ${loudness.before.integratedLufs} -> ${loudness.after.integratedLufs} LUFS integrated (target -14)
 - Unclear words or missing information: ${flags.summary.priorityFlags} priority caption flags and ${flags.summary.missingConfidence} words without confidence (\`06-captions/review-flags.json\`)

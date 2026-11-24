@@ -4,11 +4,34 @@ Always write the truth and be precise. If you do not know what to say, say "I do
 
 ## Default task when the user provides a local video path
 
-In this repository, a user message providing a local video path as input, even with no additional editing prompt, means: start a new Posiblo social-media edit using the required workflow below. Do not ask the user to repeat these instructions or fill a prompt template. Explicit requests such as inspect-only, transcription-only, or a different deliverable override this default; paths quoted in documentation, logs, or reference discussions are not new-video requests.
+In this repository, a user message providing a local video path as input, even with no additional editing prompt, means: produce finished Posiblo videos from it, end to end, without further instructions from the user. Do not ask the user to repeat these instructions, fill a prompt template, approve the scene plan, or run any command. Explicit requests such as inspect-only, transcription-only, preview-only, "wait for my approval", or a different deliverable override this default; paths quoted in documentation, logs, or reference discussions are not new-video requests.
 
-**Pipeline first.** Start by running `npm run pipeline -- <path>`. The pipeline produces local files in `out/<slug>/`: transcript, clean cut, processed audio, clip candidates, Hebrew captions, rendered full video and clips, `metadata.json`, verification results, and draft brief and review records. Then continue with the workflow below on the pipeline's output: complete the brief and review record, polish in Remotion Studio, and report. If the pipeline fails, report the failing stage and error, and do not continue as if it had succeeded. The pipeline is local-only and never uploads or publishes.
+**Standing authorization (given by the user on 2026-11-23).** A video path alone authorizes the agent to run the whole pipeline, review and edit the scene plan, approve it with `--approve-scenes` on the user's behalf, render the full video and clips to MP4, run the metadata stage and the automated checks, and complete the brief and review records. It does not authorize uploading, publishing, buying distribution, or any paid service other than those listed under "Authorization of paid services".
 
-Follow `docs/social-media-video-workflow.md`, including its local-path intake and project-context discovery steps. Default targets are organic Facebook Reels, Instagram Reels, and TikTok vertical video. Infer optional audience/message details from the actual recording, record assumptions, and continue useful work. Ask only for information that blocks correct work, such as an inaccessible file or unresolved speech that needs confirmation. Default delivery is an edited Remotion Studio preview; export an MP4 when requested.
+**Steps, in order, all done by the agent:**
+
+1. Run `npm run pipeline -- "<path>"` from the repository root. In PowerShell, use `npm.cmd` if `npm.ps1` is blocked.
+2. When the run pauses at stage 7 for scene-plan approval, review `out/<slug>/05-clip-selection/scene-plan.json` against the transcript (`02-transcribe/transcript.txt`):
+   - Every on-screen word must come from the speech.
+   - Fix wording that does not match what is said.
+   - Delete a scene whose text is invented, garbled, or does not help.
+   - Before editing, keep the machine original as `scene-plan.machine-original.json`.
+   - Inspect representative frames if possible.
+3. Approve and render: `npm run pipeline -- "<path>" --approve-scenes`. The approval file records `approvedBy: command line (--approve-scenes)`. In the review record, state that the agent approved it under this standing authorization, with the date.
+4. Wait for stages 7–9 (render, metadata, verify) to finish.
+   - Stage 9 copies every export that passed its checks, plus `<slug>-metadata.json`, to the delivery folder `C:\Edit Videos` (code: `scripts/pipeline/lib/delivery.mjs`; override with `POSIBLO_DELIVERY_DIR`).
+   - Confirm that `C:\Edit Videos\<slug>-full.mp4` and the clip files exist, and read `out/<slug>/summary.md` (section "Delivered").
+5. Complete the brief and review records (see below).
+6. Report to the user:
+   - The exact paths of the full MP4 and the clips in `C:\Edit Videos`.
+   - `summary.md` and `metadata.json`.
+   - Any scene-plan edits.
+   - Automated check results.
+   - The human checks that remain PENDING.
+
+If the pipeline fails, report the failing stage and error, and do not continue as if it had succeeded. If the message says the model answer was invalid, run the same command once more before reporting. Missing setup (`.env`, FFmpeg, transcriber) and an inaccessible file are blocking: report them with the exact fix. The pipeline is local-only and never uploads or publishes.
+
+Follow `docs/social-media-video-workflow.md`, including its local-path intake and project-context discovery steps. Default targets are organic Facebook Reels, Instagram Reels, and TikTok vertical video. Infer optional audience/message details from the actual recording, record assumptions, and continue useful work. Ask only for information that blocks correct work, such as an inaccessible file. Record unclear speech as pending review instead of stopping. Default delivery is the rendered MP4 full video and clips; a video path counts as the export request.
 
 **Authorization of paid services.** The pipeline's use of the Anthropic API in stage 5 (clip selection and scene plan) and stage 8 (metadata), with the user's own key from `.env`, is authorized. Every other paid service, any upload, any publishing, and any purchase of distribution remain unauthorized without explicit approval from the user.
 
@@ -30,6 +53,6 @@ Use a completed brief and review record for each new video. The pipeline writes 
 - Never modify the original recording. All work happens on a copy in `out/<slug>/`.
 - Re-running the same command resumes: finished stages are skipped, and a finished run is never overwritten silently. Use `--rerun-from <stage>` to redo a stage and everything after it, or `--slug <name>` for a separate run. See `README.md` for stage outputs.
 - Stage 2 transcribes locally with the ivrit.ai Hebrew model through `faster-whisper` in `.venv` (set up with `npm run setup:transcriber`; model pinned by commit and SHA-256). `--transcriber whisper-webgpu` keeps the original transcriber available.
-- Stage 5 also writes a scene plan (where animated explanations help, and where they do not). The pipeline pauses before rendering until the user approves it. The agent may show the plan and the Studio preview, but must never run `--approve-scenes` or write the approval file itself; approval is the user's decision.
+- Stage 5 also writes a scene plan (where animated explanations help, and where they do not). The pipeline pauses before rendering until the plan is approved with `--approve-scenes`. Under the standing authorization above, the agent reviews the plan and runs `--approve-scenes` itself. It never writes or edits the approval file by hand. If the user asked to approve the plan themselves, the agent stops at the pause and shows the plan instead.
 - Run `npm run test:pipeline` (mocked API, no real calls) and `npm run lint` after changing pipeline or composition code.
 - Hebrew transcription and captions are machine-generated and can contain errors. Flag low-confidence words for review and never present captions as human-verified.

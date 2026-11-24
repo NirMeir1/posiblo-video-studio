@@ -58,7 +58,7 @@ export const render = async ({runDir, slug, repoRoot, tools, log}) => {
     fs.rmSync(paths.render.publicSource, {force: true});
     try { fs.linkSync(paths.audio.edited, paths.render.publicSource); } catch { fs.copyFileSync(paths.audio.edited, paths.render.publicSource); }
   }
-  // Scene plan: written by stage 5, shown in Studio, approved by a person before anything renders.
+  // Scene plan: written by stage 5, reviewed, and approved with --approve-scenes (by the user, or by the agent under AGENTS.md) before anything renders.
   const plan = fs.existsSync(paths.clips.scenePlan) ? readJson(paths.clips.scenePlan) : {scenes: []};
   const planProblems = checkPlanFile(plan);
   if (planProblems.length) throw new Error(`${rel(runDir, paths.clips.scenePlan)} is not valid:\n- ${planProblems.join('\n- ')}`);
