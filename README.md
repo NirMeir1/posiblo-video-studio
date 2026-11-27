@@ -4,7 +4,7 @@ Turn a recording into vertical videos for Facebook Reels, Instagram Reels, and T
 
 ## Quick start
 
-Use Node.js 22 (22.13 or later) or Node.js 24+, with npm. From the project folder:
+Use Node.js 20 (20.19 or later), Node.js 22 (22.13 or later), or Node.js 24 and later, with npm. From the project folder:
 
 ```sh
 npm ci
@@ -57,16 +57,16 @@ Say "preview only" or "wait for my approval" to keep the approval step for yours
 
 - **TypeScript, JavaScript, and React 19** — video components, animations, and pipeline scripts.
 - **Node.js and npm** — runtime, commands, and dependencies.
-- **Remotion 4 and Remotion Studio** — editing, previews, Hebrew RTL captions, and rendering.
+- **Remotion 4, `@remotion/captions`, and Remotion Studio** — the pipeline converts timed words to caption JSON, and the Remotion composition renders right-to-left Hebrew captions into the MP4. Remotion Studio provides editing and previews.
 - **FFmpeg and FFprobe** — cuts, audio cleanup, loudness normalization, and export checks.
 - **Python, faster-whisper, and ivrit.ai** — local Hebrew transcription with word timestamps and confidence scores.
-- **Hugging Face Transformers and Whisper WebGPU** — optional alternative local transcription.
-- **Anthropic Claude API** — clip selection, scene planning, titles, captions, and hashtags.
+- **Hugging Face Transformers and `@remotion/whisper-webgpu`** — optional alternative local transcription via `--transcriber whisper-webgpu`.
+- **Anthropic Claude API** — clip selection, scene planning, and social post text (titles, post captions, and hashtags).
 - **Mediabunny** — installed media-processing dependencies supporting Remotion tooling.
 - **ESLint, Prettier, TypeScript checks, and Node's test runner** — code quality and pipeline tests.
 - **Codex instructions and Remotion skills** — video creation and review guidance, recorded in [AGENTS.md](AGENTS.md) and [skills-lock.json](skills-lock.json).
 
-Exact versions are in [package.json](package.json) and [package-lock.json](package-lock.json). No database or social-media publishing integration is configured. Browser tools and MCP plugins are optional agent tools, not runtime requirements.
+Exact JavaScript dependency versions are in [package.json](package.json) and [package-lock.json](package-lock.json). Python dependency versions are in [requirements.txt](scripts/pipeline/python/requirements.txt). No database or social-media publishing integration is configured. Browser tools and MCP plugins are optional agent tools, not runtime requirements.
 
 ## Development commands
 
